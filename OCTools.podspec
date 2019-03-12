@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.frameworks = 'AdSupport', 'UIKit'
   s.libraries = 'sys'
-
+  s.source_files = 'Parameter/Classes/**'
 end
