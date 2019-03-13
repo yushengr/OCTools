@@ -20,5 +20,7 @@
 + (NSString*)isJailbroken;
 /// 设备型号
 + (NSString*)iPhoneType;
+/// 今日头条公共参数
++ (NSMutableDictionary *)TT_BaseParameters;
 
 @end
