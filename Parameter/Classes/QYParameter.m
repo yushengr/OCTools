@@ -75,4 +75,9 @@
     return [[NSMutableDictionary alloc]initWithDictionary:parameters];
 }
 
++ (NSString *)timestamp {
+    NSInteger interval = (NSInteger)[[NSDate date] timeIntervalSince1970] * 1000;
+    return [NSString stringWithFormat:@"%zd",interval];
+}
+
 @end
