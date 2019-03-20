@@ -21,8 +21,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'Parameter' do |ss|
       ss.source_files = 'Parameter/Classes/**'
+  end
 
   s.subspec 'YYTimer' do |ss|
       ss.source_files = 'YYTimer/Classes/**'
+  end
 
 end
