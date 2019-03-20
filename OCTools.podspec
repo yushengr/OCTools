@@ -27,4 +27,8 @@ Pod::Spec.new do |s|
       ss.source_files = 'YYTimer/Classes/**'
   end
 
+  s.subspec 'MonitorApp' do |ss|
+      ss.source_files = 'MonitorApp/Classes/**'
+  end
+
 end
