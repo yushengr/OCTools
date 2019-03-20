@@ -18,6 +18,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yushengr/OCTools.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.frameworks = 'AdSupport', 'UIKit'
-  # s.libraries = 'utsname'
-  s.source_files = 'Parameter/Classes/**'
+
+  s.subspec 'Parameter' do |ss|
+      ss.source_files = 'Parameter/Classes/**'
+
+  s.subspec 'YYTimer' do |ss|
+      ss.source_files = 'YYTimer/Classes/**'
+
 end
