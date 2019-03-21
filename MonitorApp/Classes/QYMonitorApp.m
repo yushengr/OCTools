@@ -59,9 +59,13 @@
     }
 }
 
+- (void)removeObserver {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - dealloc
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self removeObserver];
 }
 
 @end

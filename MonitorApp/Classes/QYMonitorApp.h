@@ -23,4 +23,7 @@
 
 @property (nonatomic, weak) id<QYMonitorAppDelegate> delegate;
 
+/** 移除监听 */
+- (void)removeObserver;
+
 @end
