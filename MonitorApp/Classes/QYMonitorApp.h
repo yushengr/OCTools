@@ -7,17 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol QYMonitorAppDelegate <NSObject>
-
-@optional
-/** 进入了后台 */
-- (void)isEnterBackground;
-
-/** 进入了前台 */
-- (void)isEnterForeground;
-
-@end
+#import "QYMonitorAppDelegate.h"
 
 @interface QYMonitorApp : NSObject
 

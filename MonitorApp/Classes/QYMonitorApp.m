@@ -47,15 +47,15 @@
         });
     });
 
-    if ([_delegate respondsToSelector:@selector(isEnterBackground)]) {
-        [_delegate isEnterBackground];
+    if ([_delegate respondsToSelector:@selector(isEnterBackground:)]) {
+        [_delegate isEnterBackground:self];
     }
 }
 
 - (void)enterForeground {
 
-    if ([_delegate respondsToSelector:@selector(isEnterForeground)]) {
-        [_delegate isEnterForeground];
+    if ([_delegate respondsToSelector:@selector(isEnterForeground:)]) {
+        [_delegate isEnterForeground:self];
     }
 }
 
