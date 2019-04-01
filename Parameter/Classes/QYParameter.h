@@ -23,6 +23,6 @@
 /** 今日头条公共参数 */
 + (NSMutableDictionary *)TT_BaseParameters;
 /** 时间戳 */
-+ (NSString *)timestamp;
++ (double )timestamp;
 
 @end
